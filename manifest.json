@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Streamer Text Blur",
+  "name": "BlurGuard in Browser",
   "version": "1.8.0",
   "description": "Configurable moderation text blur for pages, chats, comments and dynamic content.",
   "permissions": [
