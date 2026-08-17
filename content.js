@@ -48,8 +48,7 @@
     )].sort((a, b) => b.length - a.length);
   }
 
-  // Case-insensitive and separator-tolerant matching:
-  // "П И Д О Р", "п-и-д-о-р", "п.и.д.о.р" and mixed case are normalized.
+
   function normalizeForMatch(text) {
     const chars = [];
     const indexes = [];
@@ -241,9 +240,7 @@
            revealHotkey === "alt" ? "Alt" : "Shift";
   }
 
-  // Inputs and textareas are not text nodes, so TreeWalker cannot see
-  // what the user is typing there. Blur the control itself when its value
-  // contains a configured term.
+
   function checkEditable(target) {
     if (!target || !["INPUT", "TEXTAREA"].includes(target.tagName)) return;
 
@@ -267,8 +264,7 @@
     root.querySelectorAll?.("input, textarea").forEach(checkEditable);
   }
 
-  // Browser tabs display document.title. We cannot modify the browser's
-  // own address/search bar, but we can mask blocked text in the page title.
+
   let originalTitle = null;
   let updatingTitle = false;
 
@@ -310,9 +306,7 @@
   const titleObserver = new MutationObserver(() => {
     if (updatingTitle) return;
 
-    // Sites like Twitch constantly change document.title.
-    // If the current title is not our masked version, treat it as the
-    // site's new original title and mask it again.
+
     const current = document.title;
     if (current !== maskTitle(originalTitle || "")) {
       originalTitle = current;
