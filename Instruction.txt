@@ -1,0 +1,42 @@
+Blur Guard — Installation Guide
+
+Google Chrome
+
+Download Blur Guard from GitHub or clone the repository.
+Extract the ZIP archive if necessary.
+Open Google Chrome.
+Enter:
+chrome://extensions/
+Enable Developer mode.
+Click Load unpacked.
+Select the Blur Guard folder containing manifest.json.
+The extension will appear in your extensions list.
+You can pin Blur Guard to the browser toolbar if needed.
+
+Updating:
+
+After changing the extension files, open:
+chrome://extensions/
+
+Find Blur Guard and click Reload.
+
+Mozilla Firefox
+
+Download Blur Guard from GitHub or clone the repository.
+Extract the ZIP archive if necessary.
+Open Mozilla Firefox.
+Enter:
+about:debugging#/runtime/this-firefox
+Open This Firefox.
+Click Load Temporary Add-on...
+Select the manifest.json file from the Blur Guard folder.
+The extension will be loaded and ready to use.
+
+Updating:
+
+After changing the extension files, open:
+about:debugging#/runtime/this-firefox
+
+Find Blur Guard and click Reload.
+
+Important: an extension loaded this way in Firefox is temporary. After completely closing Firefox, you will need to load it again.
