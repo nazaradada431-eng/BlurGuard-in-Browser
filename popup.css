@@ -1,0 +1,13 @@
+*{box-sizing:border-box}
+body{width:390px;margin:0;background:#111;color:#eee;font-family:Arial,sans-serif}
+main{padding:18px}
+h1{margin:0 0 14px}
+.warning{padding:25px 20px;border:2px solid #f44;border-radius:14px;background:#241313;text-align:center}
+.warning-icon{width:64px;height:64px;margin:auto auto 14px;border-radius:50%;background:#f44;color:#111;font-size:42px;line-height:64px;font-weight:900}
+.warning p{color:#f0caca;line-height:1.5}
+button{width:100%;padding:11px;border:0;border-radius:9px;background:#eee;color:#111;font-weight:700;cursor:pointer}
+label{display:block;margin:12px 0 6px;color:#ccc;font-size:13px}
+select,textarea{width:100%;border:1px solid #333;border-radius:8px;background:#1b1b1b;color:#fff;padding:9px;font:inherit}
+textarea{height:300px;resize:vertical}
+.hint,#status{font-size:12px;color:#999}
+.hidden{display:none}

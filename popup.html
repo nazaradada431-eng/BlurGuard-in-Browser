@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Streamer Text Blur</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<main>
+<section id="warning" class="warning">
+  <div class="warning-icon">!</div>
+  <h1>Внимание</h1>
+  <p>Фильтр будет скрывать совпадения на страницах, в чатах,
+  комментариях, списках и динамически загружаемом контенте.</p>
+  <button id="confirm">Подтвердить</button>
+</section>
+
+<section id="settings" class="hidden">
+  <h1>Streamer Text Blur</h1>
+  <p class="hint">v1.7 — база загружена. Можно редактировать список.</p>
+
+  <label>Горячая клавиша показа</label>
+  <select id="hotkey">
+    <option value="ctrl">Ctrl + клик</option>
+    <option value="alt">Alt + клик</option>
+    <option value="shift">Shift + клик</option>
+  </select>
+
+  <label>Время показа</label>
+  <select id="duration">
+    <option value="3000">3 секунды</option>
+    <option value="5000" selected>5 секунд</option>
+    <option value="10000">10 секунд</option>
+  </select>
+
+  <label>Слова / фразы — одно на строку</label>
+  <textarea id="words" spellcheck="false"></textarea>
+  <button id="save">Сохранить</button>
+  <div id="status"></div>
+</section>
+</main>
+<script src="popup.js"></script>
+</body>
+</html>

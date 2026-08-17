@@ -1,0 +1,28 @@
+.stb-blurred-word {
+  filter: blur(5px) !important;
+  transition: filter .12s ease;
+  cursor: help !important;
+  user-select: none !important;
+}
+
+.stb-blurred-word.stb-revealed {
+  filter: none !important;
+}
+
+.stb-blurred-word:hover {
+  filter: blur(6px) !important;
+}
+
+.stb-blurred-word.stb-revealed:hover {
+  filter: none !important;
+}
+
+/* Text typed into chat/search/input controls. */
+.stb-editable-blurred {
+  filter: blur(5px) !important;
+  transition: filter .12s ease;
+}
+
+.stb-editable-blurred:focus {
+  filter: blur(5px) !important;
+}

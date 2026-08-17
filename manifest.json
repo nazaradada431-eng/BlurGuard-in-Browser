@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Streamer Text Blur",
+  "version": "1.8.0",
+  "description": "Configurable moderation text blur for pages, chats, comments and dynamic content.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Streamer Text Blur"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "streamer-text-blur@example.com",
+      "strict_min_version": "109.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "all_frames": true,
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
